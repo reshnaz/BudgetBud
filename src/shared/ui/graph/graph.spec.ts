@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InsightCard } from './insight-card';
+import { Graph } from './graph';
 
-describe('InsightCard', () => {
-  let component: InsightCard;
-  let fixture: ComponentFixture<InsightCard>;
+describe('Graph', () => {
+  let component: Graph;
+  let fixture: ComponentFixture<Graph>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InsightCard]
+      imports: [Graph]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InsightCard);
+    fixture = TestBed.createComponent(Graph);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
