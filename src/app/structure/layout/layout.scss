@@ -17,6 +17,10 @@
 .insight-cards {
     grid-area: insight-cards;
     background-color: rgb(237, 202, 135);
+    display: grid;
+    padding: 1%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
 }
 
 .graphs-and-info {
@@ -31,9 +35,17 @@
 .gni-col1 {
     grid-area: col1;
     background-color: cadetblue;
+    display: grid;
+    padding: 2%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
 }
 
 .gni-col2 {
     grid-area: col2;
     background-color: aquamarine;
+    display: grid;
+    padding: 2%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
 }
