@@ -1,7 +1,8 @@
 .layout-grid {
     display: grid;
+    background-color: #E8E8E8;
     height: 100%;
-    grid-template-rows: 10vh 30vh 60vh;
+    grid-template-rows: auto 30vh 60vh;
     /* defines the grid areas placing the grid items */
     grid-template-areas:
     "header"
@@ -11,40 +12,33 @@
 
 .header {
     grid-area: header;
-    background-color: skyblue;
-    gap: 1%;
 }
 
 .insight-cards {
     grid-area: insight-cards;
-    background-color: rgb(237, 202, 135);
     display: grid;
     padding: 1%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1%;
 }
 
 .graphs-and-info {
     grid-area: graphs-and-info;
-    background-color: rgb(221, 173, 181);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 75%;
     grid-template-areas:
     "col1 col2"
 }
 
 .gni-col1 {
     grid-area: col1;
-    background-color: cadetblue;
     display: grid;
-    padding: 2%;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 2%;
+    padding: 4%;
+    grid-template-rows: 1fr;
 }
 
 .gni-col2 {
     grid-area: col2;
-    background-color: aquamarine;
     display: grid;
     padding: 2%;
     grid-template-rows: repeat(2, 1fr);
