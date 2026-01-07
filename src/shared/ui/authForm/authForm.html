@@ -1,0 +1,28 @@
+
+<div>
+  <mat-form-field appearance="outline">
+    <mat-label>Email Address</mat-label>
+    <input matInput placeholder="johndoe@email.com" />
+  </mat-form-field>
+</div>
+<div>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput [type]="hide() ? 'password' : 'text'" />
+    <button
+    matIconButton
+    matSuffix
+    (click)="clickEvent($event)"
+    [attr.aria-label]="'Hide password'"
+    [attr.aria-pressed]="hide()"
+    >
+    <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+  </button>
+</mat-form-field>
+</div>
+<div>
+  <mat-checkbox>Keep me signed in</mat-checkbox>
+</div>
+<div>
+  <button matButton="filled">Login</button>
+</div>

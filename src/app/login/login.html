@@ -1,12 +1,3 @@
-<form [formGroup]="loginForm">
-    <label for="e-mail">Email Address</label> <br>
-    <input id="e-mail" type="text" formControlName="email" />
-    <br> <br>
-    <label for="password">Password</label> 
-    <a href="/">Forgot Password?</a><br>
-    <input id="password" type="password" formControlName="password" /><br>
-    <input id="keepSignedIn" type="checkbox" /> 
-    <label for="keepSignedIn">Keep me signed in</label> <br>
-    <a href="/">Create an account</a> <br>
-    <button>Login</button>
-</form>
+<div class="container">
+    <app-authForm></app-authForm>
+</div>

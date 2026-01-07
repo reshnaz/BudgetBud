@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { AuthForm } from "../../shared/ui/authForm/authForm";
 
 @Component({
   selector: 'app-login',
-  imports: [ ReactiveFormsModule ],
+  imports: [AuthForm],
   templateUrl: './login.html',
   styleUrl: './login.scss',
 })
 export class Login {
-  loginForm = new FormGroup ({
-    email: new FormControl(''),
-    password: new FormControl('')
-  })
 }
