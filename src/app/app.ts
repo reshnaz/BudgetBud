@@ -3,11 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Sidebar } from './structure/sidebar/sidebar';
 import { Layout } from './structure/layout/layout';
 import { Login } from "./login/login";
-import { TransactionTable } from '../shared/ui/transaction-table/transaction-table';
+import { AccountGrid } from '../shared/ui/account-grid/account-grid';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TransactionTable],
+  imports: [RouterOutlet, AccountGrid],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
