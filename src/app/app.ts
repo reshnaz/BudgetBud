@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { EditBtn } from '../shared/ui/edit-btn/edit-btn';
+import { ProgressGauge } from '../shared/ui/progress-gauge/progress-gauge';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, EditBtn],
+  imports: [RouterOutlet, ProgressGauge],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
